@@ -1,15 +1,18 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { HEADER_LIST, MEDIA_LINKS } from "@/utils/helper";
 
 const Header = () => {
     const [open, setOpen] = useState(false);
+    useEffect(() => {
+        document.body.classList.toggle("overflow-hidden", open);
+    });
     return (
         <div className="position-relative w-100 d-flex justify-content-between align-items-center nav-parent">
             <Link href="#" className="position-absolute nav-logo">
-                <Image src="/assets/images/png/logo-bg.png" alt="logo" width={355} height={55} />
+                <Image src="/assets/images/png/logo-bg.png" alt="logo" width={420} height={81} />
             </Link>
             <div className="container d-flex justify-content-md-end justify-content-center pt-md-0 pt-2 mt-md-0 mt-4 header-links">
                 <div className={`d-flex align-items-center flex-md-row justify-content-center flex-column end-md-0 nav-link-parent z-2 ${open ? "start-0" : "start-100"}`}>

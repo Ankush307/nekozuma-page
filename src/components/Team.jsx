@@ -11,7 +11,7 @@ const Team = () => {
                 <div className="d-flex flex-wrap justify-content-center gap-3 mt-4 team-card-parent mx-auto">
                     {TEAM_LIST.map((obj, i) => (
                         <div key={i} className="team-card justify-content-center align-items-center d-flex flex-column">
-                            <Image className='pe-none' src={obj.image} alt={obj.name} width={202} height={202} />
+                            <Image className='pe-none team-card-img' src={obj.image} alt={obj.name} width={202} height={202} />
                             <p className='text-blue fs-4 text-center mb-2 mt-4 font-franklin'>{obj.tittle}</p>
                             <p className='text-xs text-light-blue text-center mb-2'>{obj.name}</p>
                             <p className='fs-xs text-light-blue text-center mb-2'>{obj.description}</p>

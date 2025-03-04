@@ -130,7 +130,7 @@ body {
   margin: 0 auto;
 }
 
-.hero-nokozuma .container {
+.hero-nokozuma-container {
   padding-left: 170px;
   padding-top: 80px;
 }
@@ -164,6 +164,7 @@ body {
 .story-description-2 {
   max-width: 888px;
   padding-bottom: 58px;
+  padding-top: 36px;
 }
 
 /* ============Team =========== */
@@ -213,6 +214,10 @@ body {
   scale: 1.3;
 }
 
+.footer-text {
+  font-size: 21px;
+}
+
 @media (max-width: 1023.98px) {
   .header-links {
     padding-right: 0 !important;
@@ -228,7 +233,7 @@ body {
     gap: 24px;
   }
 
-  .hero-nokozuma .container {
+  .hero-nokozuma-container {
     padding-left: 125px;
   }
 
@@ -249,7 +254,13 @@ body {
   .right-vector {
     display: none;
   }
+
+  .cats-img {
+    max-width: 202px;
+    max-height: 202px;
+  }
 }
+
 
 @media (max-width: 767.98px) {
 
@@ -276,7 +287,7 @@ body {
     display: none;
   }
 
-  .hero-nokozuma .container {
+  .hero-nokozuma-container {
     padding: 45px 20px 0px;
   }
 
@@ -292,6 +303,15 @@ body {
 
   .team-heading::after {
     width: 110px;
+  }
+
+  .team-card {
+    max-width: 305px;
+  }
+
+  .team-card-img {
+    width: 305px !important;
+    height: 305px !important;
   }
 
   /* fs */

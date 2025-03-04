@@ -25,7 +25,7 @@ export const MEDIA_LINKS = [
     },
 ];
 
-export const CARDS_IMG = [
+export const CARDS_IMG_LIST = [
     "/assets/images/webp/cat-img-one.webp",
     "/assets/images/webp/cat-img-two.webp",
     "/assets/images/webp/cat-img-three.webp",
