@@ -14,7 +14,7 @@ export const HEADER_LIST = [
 
 ];
 
-export const SOCIAL_LIST = [
+export const MEDIA_LINKS = [
     {
         name: "/assets/images/svg/discord-icon.svg",
         link: "https://discord.com/",
