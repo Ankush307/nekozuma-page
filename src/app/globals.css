@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100;200;300;400;500;600;700;800&display=swap');
 
 @font-face {
-  font-family: "Franklin Gothic Heavy";
-  src: url('/assets/fonts/Franklin\ Gothic\ Heavy\ Regular.ttf');
+  font-family: franklin;
+  src: url(/assets/fonts/FranklinGothic-Heavy.otf);
 }
 
 * {
@@ -13,8 +13,25 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Sarabun", sans-serif;
   background-color: #1c2430 !important;
+}
+
+.text-blue {
+  color: #3586FF !important;
+}
+
+.text-light-blue {
+  color: #D4E5FF !important;
+}
+
+/* font-size */
+.fs-xl {
+  font-size: 43px;
+}
+
+.fs-xs {
+  font-size: 14px;
 }
 
 .font-franklin {
@@ -30,14 +47,20 @@ body {
   height: 2px;
   background-color: white;
   transition: all 300ms linear;
+  border-radius: 10px;
+}
+
+.toggle-button-one {
+  width: 26px;
 }
 
 .open {
   transform: translateY(4px) rotate(45deg);
+  width: 32px;
 }
 
 .open-two {
-  transform: translateY(-5px) rotate(-45deg);
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 /* Header */
@@ -134,43 +157,56 @@ body {
   color: #3586ff !important;
 }
 
-/* 
-.slide-scroll {
-  animation: slide 20s linear infinite;
+/* ============Story=========== */
+.story-description {
+  max-width: 888px;
 }
 
-.slide-scroll:hover {
-  animation-play-state: paused;
+.story-description-2 {
+  max-width: 888px;
+  padding-bottom: 58px;
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(-50%);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
+/* ============Team =========== */
+.team-card {
+  max-width: 205px;
 }
 
-.slide-scroll-left {
-  animation: slide-left 20s linear infinite;
+.max-w-2xl {
+  max-width: 880px;
 }
 
-.slide-scroll-left:hover {
-  animation-play-state: paused;
+.team-heading {
+  color: #3586ff;
+  font-size: 43px;
+  line-height: 113%;
+  padding-bottom: 36px;
+  padding-top: 56px;
+  position: relative;
+  max-width: 168px;
 }
 
-@keyframes slide-left {
-  0% {
-    transform: translateX(70%);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
+.team-heading::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 168px;
+  height: 1px;
+  background-color: #3586ff;
 }
- */
+
+/* Footer */
+
+.footer-bg {
+  background-image: url('/assets/images/png/footer-background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 174px;
+}
+
 
 @media (max-width: 1025.98px) {
   .hero-parent img {
@@ -218,12 +254,7 @@ body {
 
 @media (max-width: 767.98px) {
 
-  /* ==== NAV BAR RESPONSIVE ==== */
-  .nav-logo img {
-    width: 270px;
-    height: 70px;
-  }
-
+  /* ==== Header Responsive ==== */
   .nav-link-parent {
     gap: 20px;
     background-color: #245aab !important;
@@ -234,7 +265,18 @@ body {
     transition: all 300ms linear;
   }
 
-  /* ==== HERO SECTION RESPONSIVE */
+  .nav-logo img {
+    width: 270px;
+    height: 70px;
+  }
+
+
+  /* ==== Hero Responsive */
+
+  .left-vector,
+  .blue-box {
+    display: none;
+  }
 
   .hero-parent .container {
     padding: 45px 20px 0px;
@@ -244,8 +286,20 @@ body {
     font-size: 48px;
   }
 
-  .left-vector,
-  .blue-box {
-    display: none;
+  /* ==== Team Responsive */
+  .team-heading {
+    padding-bottom: 32px;
+    padding-top: 12px;
   }
+
+  .team-heading::after {
+    width: 110px;
+  }
+
+  /* fs */
+  .fs-xl {
+    font-size: 24px !important;
+  }
+
+
 }

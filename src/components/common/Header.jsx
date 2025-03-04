@@ -24,8 +24,8 @@ const Header = () => {
                         ))}
                     </div>
                 </div>
-                <div onClick={() => setOpen(!open)} className="w-100 d-flex gap-2 flex-column d-md-none justify-content-center align-items-end w-100 z-3">
-                    <span className={`toggle-button ${open ? "open" : "close"}`}></span>
+                <div onClick={() => setOpen(!open)} className="w-100 d-flex gap-2 flex-column d-md-none justify-content-center align-items-end z-3">
+                    <span className={`toggle-button toggle-button-one  ${open ? "open" : "close"}`}></span>
                     <span className={`toggle-button ${open ? "open-two" : "close"}`}></span>
                 </div>
             </div>
