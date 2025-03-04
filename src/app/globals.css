@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: franklin;
-  src: url(/assets/fonts/FranklinGothic-Heavy.otf);
+  src: url('/assets/fonts/FranklinGothic-Heavy.otf');
 }
 
 * {
@@ -73,6 +73,11 @@ body {
   margin: 0 auto;
 }
 
+.nav-logo img {
+  max-width: 420px;
+  height: 81px;
+}
+
 .nav-logo {
   top: 0;
   left: 0;
@@ -124,13 +129,13 @@ body {
   background-color: #3586ff;
 }
 
-.hero-nokozuma {
+.hero-nekozuma {
   padding-top: 29px;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.hero-nokozuma-container {
+.hero-nekozuma .container {
   padding-left: 170px;
   padding-top: 80px;
 }
@@ -216,6 +221,7 @@ body {
 
 .footer-text {
   font-size: 21px;
+  text-decoration: none;
 }
 
 @media (max-width: 1023.98px) {
@@ -228,16 +234,16 @@ body {
     height: 273px !important;
   }
 
-  .hero-nokozuma {
+  .hero-nekozuma {
     flex-direction: column;
     gap: 24px;
   }
 
-  .hero-nokozuma-container {
+  .hero-nekozuma .container {
     padding-left: 125px;
   }
 
-  .hero-nokozuma img {
+  .hero-nekozuma img {
     width: 390px;
     height: 100%;
   }
@@ -287,7 +293,7 @@ body {
     display: none;
   }
 
-  .hero-nokozuma-container {
+  .hero-nekozuma .container {
     padding: 45px 20px 0px;
   }
 

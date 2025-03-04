@@ -1,4 +1,3 @@
-import React from 'react'
 import { CARDS_IMG_LIST } from '@/utils/helper'
 import Image from 'next/image'
 import Marquee from "react-fast-marquee";

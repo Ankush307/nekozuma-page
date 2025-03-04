@@ -1,7 +1,6 @@
 import { TEAM_LIST } from '@/utils/helper'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 
 const Team = () => {
     return (

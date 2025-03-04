@@ -17,12 +17,12 @@ const Header = () => {
             <div className="container d-flex justify-content-md-end justify-content-center pt-md-0 pt-2 mt-md-0 mt-4 header-links">
                 <div className={`d-flex align-items-center flex-md-row justify-content-center flex-column end-md-0 nav-link-parent z-2 ${open ? "start-0" : "start-100"}`}>
                     {HEADER_LIST.map((obj, i) => (
-                        <Link onClick={() => setOpen(!open)} key={i} href={obj.link} className="text-decoration-none text-white fw-normal nav-link"> {obj.name}</Link>
+                        <Link onClick={() => setOpen(!open)} key={i} href={obj.link} className="text-decoration-none text-white fw-normal nav-link"> {obj.tittle}</Link>
                     ))}
                     <div className="d-flex gap-3">
                         {MEDIA_LINKS.map((obj, i) => (
                             <Link className="media-links" key={i} href={obj.link} target="_blank">
-                                <Image className="media-icon" src={obj.name} alt="media icon" width={29} height={29} />
+                                <Image className="media-icon" src={obj.icon} alt="media icon" width={29} height={29} />
                             </Link>
                         ))}
                     </div>

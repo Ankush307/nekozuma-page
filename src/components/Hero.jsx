@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Header from "./common/Header";
 
@@ -6,8 +5,8 @@ const Hero = () => {
     return (
         <div className="relative mx-auto overflow-hidden">
             <Header />
-            <div className="d-flex align-items-center position-relative hero-nokozuma justify-content-center">
-                <div className="container hero-nokozuma-container position-relative z-1">
+            <div className="d-flex align-items-center position-relative hero-nekozuma justify-content-center">
+                <div className="container position-relative z-1">
                     <h1 className="hero-heading font-franklin m-0">NEKOZUMA</h1>
                     <p className="m-0 text-white hero-description">
                         The collection of 5555 NFTs on the Solana blockchain. The collection
